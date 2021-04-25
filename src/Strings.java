@@ -8,7 +8,7 @@ public class Strings {
     //In Java . . they are not primitives! They are objects - your variables are a reference type instead. That means == asks if both sides have the same reference vs value
     //This leads us to use object comparison methods (.equals and family) to realiably check the VALUES of the objects vs. the REFERENCES of the objects
 
-    //Don't do this! ! ! This is behavior from a woods-y topic related to how the Java Virtual Machine
+    //Don't do this! ! ! This is behavior from a woods-y topic related to how the Java Virtual Machine works
     if("This is a string" == "This is a string"){
         System.out.println("Performing some kind of super important operation with the above!! (Skynet launched!)");
     }
