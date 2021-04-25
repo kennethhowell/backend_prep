@@ -22,7 +22,7 @@ public class ControlStatementsLoops {
     boolean isOwner = false;
 
         System.out.println("(isAdmin && isLoggedIn) = " + (isAdmin && isLoggedIn) + ". Do I reveal the hidden administrator portal? " + (isAdmin && isLoggedIn)); //show an administrator panel
-        System.out.println("(isOwner || isAdmin) = " + (isOwner || isAdmin) + ". Is this the admin or the user who made this post? Do I show the edit panel to this post? " + (isOwner || isAdmin)); //show post edit tools if one is true
+        System.out.println("(isOwner || isAdmin) = " + (isOwner || isAdmin) + ". Is this the admin or the user who made this posqt? Do I show the edit panel to this post? " + (isOwner || isAdmin)); //show post edit tools if one is true
         System.out.println("(!isLoggedIn) = " + (!isLoggedIn) + ", Am I not logged in and need to go to a log-in screen? " + (!isLoggedIn));
 
 
@@ -41,6 +41,8 @@ public class ControlStatementsLoops {
         }
 
         //String Comparison
+
+
     //~ - ~ * Control Structures * ~ - ~
     //If. .
     //Switch case
