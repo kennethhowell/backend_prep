@@ -178,9 +178,9 @@ public class ControlStatementsLoops {
 // <----------------------------+
 
         for(int i = 1; i <= 10; i++) { // <--+
-            if(i % 2 == 1) { //              |
+            if(i % 2 == 1) { //              ^
                 System.out.println("Woops - skipping odd number");
-                continue; // ----------------+
+                continue; // ----------------^
             }
             System.out.println("Heres a nice even number " + i);
         }
