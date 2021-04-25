@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Strings {
     public static void main(String[] args){
 
@@ -61,6 +63,25 @@ public class Strings {
         System.out.println(austinSentence);
         System.out.println("austinSentence.indexOf(\"is\") = " + austinSentence.indexOf("is"));
         System.out.println("austinSentence.lastIndexOf(\"is\") = " + austinSentence.lastIndexOf("is"));
+        System.out.println();
+    //int length() - returns length of string
+        System.out.println("austinSentence = " + austinSentence);
+        System.out.println("austinSentence.length() = " + austinSentence.length());
+        System.out.println("txCapitalCity = " + txCapitalCity);
+        System.out.println("txCapitalCity.length() = " + txCapitalCity.length());
+        System.out.println();
+    //String .replace(searchPattern, replacementString) - Returns a copy of the string with the matching pattern replaced by the second argument
+        String newcapitalSentence = austinSentence.replace("is Austin, and it is", "was five other cities before Austin, and the state is");
+        System.out.println("newcapitalSentence = " + newcapitalSentence);
+        //.toLowerCase() & toUpperCase()
+        System.out.println("txCapitalCity = " + txCapitalCity);
+        System.out.println("txCapitalCity.toLowerCase() = " + txCapitalCity.toLowerCase());
+        System.out.println("txCapitalCity.toUpperCase() = " + txCapitalCity.toUpperCase());
+        //,trim() - trim off whitespace on either end of your string
+        String paddingAustin = "    austin    ";
+        System.out.println("paddingAustin = " + paddingAustin + ".");
+        System.out.println("paddingAustin.trim() = " + paddingAustin.trim() + ".");
+
 
     }
 }
