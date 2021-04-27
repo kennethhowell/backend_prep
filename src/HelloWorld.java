@@ -1,16 +1,14 @@
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
 
-        System.out.print("Hello ");
-        System.out.print("World!");
+    long i = 2;
 
-
-
+    do {
+        System.out.println("i = " + i);
+        i = i * i;
+    } while (i < 100000);
     }
-
-
 }
 
 
