@@ -19,12 +19,15 @@ public class fileIO {
     }
 
     public static void main(String[] args) throws IOException {
-        Path filename = Paths.get("/Users/kennethhowell/IdeaProjects/backend_prep/src/fileIO/wcw.txt");
-        System.out.println("filename = " + filename);
+//        Path filename = Paths.get("/Users/kennethhowell/IdeaProjects/backend_prep/src/fileIO/wcw.txt"); //absolute path [used intelliJ 'grab' tool]
+        Path filename = Paths.get("./src/fileIO/wcw.txt"); //relative ./ from current directory
 
-        System.out.println("Files.exists(filename) = " + Files.exists(filename));
 
-        printFileContents(filename);
+        System.out.println("filename = " + filename); //value of Path object
+
+        System.out.println("Files.exists(filename) = " + Files.exists(filename)); //bool did you find this filename?
+
+        printFileContents(filename); //method from @ DH lecture, utilizes Files class in above method + for loop to set up a formatted string line by line for output
     }
 
 
