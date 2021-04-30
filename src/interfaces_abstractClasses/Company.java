@@ -1,6 +1,6 @@
 package interfaces_abstractClasses;
 
-public class Company {
+public class Company { //haberdasheryINC
     public static void main(String[] args) {
 
             Accountant numberBot = new Accountant("numberBot", "Accounting"); // [✓] We can instantiate an accountant just fine [✓]
