@@ -146,6 +146,42 @@ public class ArraysLec {
 
         //~*~ 2d Arrays (enter the matrix) ~*~
 
+        //2d Arrays (commonly referred to as an array matrix) are daunting to encounter for the first time. . but, imagine you are working with a grid/spreadsheet
+
+        //TODO Together: Let's utilize the example from the slide to dive into this concept:
+
+        int[][] matrix = {
+                {1, 2, 3}, //row 1
+                {4, 5, 6}, //row 2
+                {7, 8, 9}  //row 3
+        };
+
+        for (int[] row : matrix){ //an individual int array from our array of arrays
+            System.out.println("+---+---+---+");
+            System.out.print("| ");
+
+            for (int number : row){ //an individual number from our int array
+                System.out.print(number + " | ");
+            }
+
+            System.out.println();
+        }
+        System.out.println("+---+---+---+");
+
+        System.out.println("matrix[0][0] = " + matrix[0][0]); //row 1, col 1
+
+        //TODO Interactive: Help me out here, if matrix[0][0] worked as demonstrated above, can you help me print out the "5" and "9"?
+
+        System.out.println("matrix[1][1] = " + matrix[1][1]);
+        System.out.println("matrix[2][2] = " + matrix[2][2]);
+
+        //TODO: Emergency! Emergency! Alien invaders have been detected at int 6, int 7, and int 2 in our grid area! Dispatch our MIB forces to the appropriate parts of the array by finishing my System.outs!
+        System.out.println();
+        System.out.println("Deploying MIB personnel to counter alien activity!");
+//        System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //"grid area 6!"
+//        System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //"grid area 7!"
+//        System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //"grid area 2!"
+
 
     }
 
