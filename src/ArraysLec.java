@@ -48,7 +48,7 @@ public class ArraysLec {
 
         //TODO Together: We can use the ARRAY INITIALIZER to set up not only our array and its length, but the elements inside as well!
 
-        String[] cohorts = {"Marco", "Neptune", "Oberon", "Polaris"};
+        String[] cohorts = {"Marco", "Oberon", "Neptune", "Polaris"};
 
         System.out.println("Hey, good to see you today " + cohorts[0] + " students! Did you know our upcoming cohort is going to be named " + cohorts[3] + "?");
 
@@ -110,12 +110,41 @@ public class ArraysLec {
 
         //Arrays.equals(arr1, arr2) = T/F: are both arrays the same type and all the elements equal?
 
-        //TODO Together: Let's demonstrate equals by comparing our ice cream party lists:
+        //TODO Together: Let's demonstrate .equals() by comparing our ice cream party lists:
 
         System.out.println("Arrays.equals(groceryList, groceryList) = " + Arrays.equals(groceryList, groceryList));
         System.out.println("Arrays.equals(refinedList, groceryList) = " + Arrays.equals(refinedList, groceryList));
 
         //~*~ More Array.methods() ~*~
+        //Arrays.toString(arr) = returns a String representation of the array including the brackets
+
+        //TODO Together: We have an array of Cohorts in this file - let's stringify that array.
+        System.out.println(Arrays.toString(cohorts));
+
+        //TODO Together: We do get the brackets back with the method, but let's solve that with a little method chain-chain-chain as an example of what you could do:
+
+        String cohortString = Arrays.toString(cohorts).replace("[", "").replace("]", "");
+        System.out.println(cohortString + " cohorts reporting for duty!");
+
+        //Arrays.sort(arr) - Sort elements of array into ascending order
+
+        //TODO Together: Hey, Oberon and Neptune are out of line in our array - .sort might help us out there!
+
+        Arrays.sort(cohorts);
+        cohortString = Arrays.toString(cohorts).replace("[", "").replace("]", "");
+        System.out.println("Sorted:");
+        System.out.println(cohortString + " cohorts reporting for duty!"); //Squared away!
+
+        //Arrays.binarySearch(array, value) = returns int index of value when found, negative number when not found
+
+        //TODO Together: Let's demonstrate binarySearch by looking for a couple cohorts in our array.
+        System.out.println("Arrays.binarySearch(cohorts, \"Marco\") = " + Arrays.binarySearch(cohorts, "Marco")); //element found @ index 0
+        System.out.println("Arrays.binarySearch(cohorts, \"Polaris\") = " + Arrays.binarySearch(cohorts, "Polaris")); //element found @ index 3
+        System.out.println("Arrays.binarySearch(cohorts, \"Deimos\") = " + Arrays.binarySearch(cohorts, "Deimos")); //element not found (-1)
+
+        //TODO: We've covered a lot of different methods so far - pick at least two(2) to experiment with below with either an array from the lecture, your earlier array you built, or a brand new array for this TODO.
+
+        //~*~ 2d Arrays (enter the matrix) ~*~
 
 
     }
