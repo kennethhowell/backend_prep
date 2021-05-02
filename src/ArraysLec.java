@@ -177,10 +177,15 @@ public class ArraysLec {
 
         //TODO: Emergency! Emergency! Alien invaders have been detected at int 6, int 7, and int 2 in our grid area! Dispatch our MIB forces to the appropriate parts of the array by finishing my System.outs!
         System.out.println();
+        System.out.println("ALERT ** ALERT ** ALERT **");
+        System.out.println("|| ALIEN ACTIVITY DETECTED IN OUR GRID ||");
+        System.out.println("** ALERT ** ALERT ** ALERT");
         System.out.println("Deploying MIB personnel to counter alien activity!");
-//        System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //"grid area 6!"
-//        System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //"grid area 7!"
-//        System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //"grid area 2!"
+        System.out.println("MIB Officer Douglas H. headed to grid area " + matrix[1][2] + "!"); //"grid area 6!"
+        System.out.println("MIB Officer Larry C. headed to grid area " + matrix[2][0] + "!"); //"grid area 7!"
+        System.out.println("MIB Officer Kenneth H. headed to grid area " + matrix[0][1] + "!"); //"grid area 2!"
+
+
 
 
     }
