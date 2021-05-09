@@ -1,6 +1,6 @@
 package interfaces_abstractClasses;
 
-abstract class Employee {
+abstract class Employee implements DailyWork{
     protected String name;
     protected String department;
 

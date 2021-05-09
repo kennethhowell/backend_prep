@@ -1,10 +1,14 @@
 package interfaces_abstractClasses;
 
+import java.util.ArrayList;
+
 public class Company { //haberdasheryINC
     public static void main(String[] args) {
 
-            Accountant numberBot = new Accountant("numberBot", "Accounting"); // [✓] We can instantiate an accountant just fine [✓]
-            Custodian cleanerBot = new Custodian("cleanerBot", "Maintenance"); // [✓] We can instantiate a custodian just fine [✓]
+        ArrayList<String> myList = new ArrayList<>();
+
+            Employee numberBot = new Accountant("numberBot", "Accounting"); // [✓] We can instantiate an accountant just fine [✓]
+            Employee cleanerBot = new Custodian("cleanerBot", "Maintenance"); // [✓] We can instantiate a custodian just fine [✓]
 //            Employee workerTron = new Employee(); // [X] We cannot instantiate the Employee class! Abstract classes cannot be directly instantiated! [X]
 
         System.out.println("DailyWork.businessHours = " + DailyWork.businessHours);
