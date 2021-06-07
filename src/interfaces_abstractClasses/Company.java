@@ -11,7 +11,7 @@ public class Company { //haberdasheryINC
             Employee cleanerBot = new Custodian("cleanerBot", "Maintenance"); // [✓] We can instantiate a custodian just fine [✓]
 //            Employee workerTron = new Employee(); // [X] We cannot instantiate the Employee class! Abstract classes cannot be directly instantiated! [X]
 
-        System.out.println("DailyWork.businessHours = " + DailyWork.businessHours);
+//        System.out.println("DailyWork.businessHours = " + DailyWork.businessHours);
         System.out.println("Employee name and department = " + numberBot.getName() + " : " + numberBot.getDepartment());
         System.out.println("Employee morning meeting expectations = " + numberBot.morningMeeting());
         System.out.println("Employee lunchtime expectations = " + numberBot.lunchTime());

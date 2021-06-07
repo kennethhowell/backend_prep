@@ -1,14 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
 
-    long i = 2;
+        List<String> exampleList = new ArrayList<>();
 
-    do {
-        System.out.println("i = " + i);
-        i = i * i;
-    } while (i < 100000);
+        long i = 2;
+
+        String vetCodeathon = "";
+
     }
+
 }
 
 
